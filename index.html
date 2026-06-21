@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelMate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🌍 TravelMate</h1>
+    <p>날씨와 동행을 선택하면 여행지를 추천해드립니다.</p>
+
+    <div class="box">
+        <label>오늘 날씨</label>
+        <select id="weather">
+            <option value="sunny">맑음</option>
+            <option value="cloudy">흐림</option>
+            <option value="rainy">비</option>
+        </select>
+    </div>
+
+    <div class="box">
+        <label>누구와 함께?</label>
+        <select id="companion">
+            <option value="alone">혼자</option>
+            <option value="friend">친구</option>
+            <option value="couple">연인</option>
+            <option value="family">가족</option>
+        </select>
+    </div>
+
+    <button onclick="recommendPlace()">추천받기</button>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
